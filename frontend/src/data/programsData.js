@@ -1,0 +1,216 @@
+// Temporary frontend constants — replace with backend API data in later phases.
+// Program detail fields drive /programs/:slug (ProgramDetail.jsx).
+
+export const PROGRAMS = [
+  {
+    id: 'strength-foundation', num: '01', name: 'STRENGTH FOUNDATION', slug: 'strength-foundation',
+    category: 'STRENGTH', difficulty: 'ALL LEVELS', duration: '12 WEEKS', focus: 'MAXIMAL FORCE',
+    sessions: '3 SESSIONS / WEEK', featured: true,
+    desc: 'Barbell-first programming built around squat, bench, deadlift and overhead press. Progressive overload with coach-reviewed technique blocks.',
+    overview: {
+      what: 'A 12-week barbell strength track. Learn the four main lifts properly, add weight gradually and build a durable strength base.',
+      who: 'Anyone who wants to get genuinely strong — from confident beginners to returning lifters who need structure.',
+      goal: 'Add load to your main lifts every week while keeping technique clean and joints healthy.',
+    },
+    trains: ['STRENGTH', 'TECHNIQUE', 'CORE', 'MOBILITY'],
+    equipment: ['Power Rack', 'Olympic Barbell', 'Weight Plates', 'Flat Utility Bench'],
+    img: 'https://images.unsplash.com/photo-1517963879433-6ad2b056d712?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Athlete loading a barbell on a power rack',
+    week: [
+      { day: 'DAY 01', title: 'LOWER BODY', exercises: ['Back Squat', 'Romanian Deadlift', 'Walking Lunges', 'Core Circuit'] },
+      { day: 'DAY 02', title: 'UPPER BODY', exercises: ['Bench Press', 'Barbell Row', 'Shoulder Press', 'Arms'] },
+      { day: 'DAY 03', title: 'FULL BODY + PULL', exercises: ['Deadlift', 'Pull-ups', 'Farmer Carry', 'Core'] },
+    ],
+  },
+  {
+    id: 'fat-loss-conditioning', num: '02', name: 'FAT LOSS & CONDITIONING', slug: 'fat-loss-conditioning',
+    category: 'CONDITIONING', difficulty: 'ALL LEVELS', duration: '8 WEEKS', focus: 'FAT LOSS + HABITS',
+    sessions: '4 SESSIONS / WEEK', featured: false,
+    desc: 'Sustainable fat-loss training paired with daily movement targets and habit coaching. Strength retained, conditioning progressed weekly.',
+    overview: {
+      what: 'An 8-week conditioning block combining strength maintenance, intervals and daily-step targets for steady, sustainable fat loss.',
+      who: 'Members who want to drop body fat and build an engine without crash diets or exhausting daily training.',
+      goal: 'Improve work capacity, keep muscle, and build habits that hold after the program ends.',
+    },
+    trains: ['CONDITIONING', 'STRENGTH', 'CORE', 'HABITS'],
+    equipment: ['Treadmill', 'Rowing Machine', 'Kettlebell Set', 'Battle Rope'],
+    img: 'https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Rowing machines lined up in a conditioning lab',
+    week: [
+      { day: 'DAY 01', title: 'STRENGTH + INTERVALS', exercises: ['Goblet Squat', 'Dumbbell Row', 'Bike Intervals', 'Finisher Core'] },
+      { day: 'DAY 02', title: 'CIRCUIT CONDITIONING', exercises: ['Kettlebell Swings', 'Battle Ropes', 'Row Intervals', 'Plank Series'] },
+      { day: 'DAY 03', title: 'ZONE 2 + MOBILITY', exercises: ['Incline Walk', 'Rower Zone 2', 'Hip Mobility', 'Breathing'] },
+    ],
+  },
+  {
+    id: 'muscle-building', num: '03', name: 'MUSCLE BUILDING', slug: 'muscle-building',
+    category: 'HYPERTROPHY', difficulty: 'INTERMEDIATE', duration: '10 WEEKS', focus: 'MUSCLE SIZE',
+    sessions: '4 SESSIONS / WEEK', featured: true,
+    desc: 'Split-based volume training with strict tempo, mind-muscle control and joint-friendly exercise selection for dense, balanced muscle.',
+    overview: {
+      what: 'A 10-week hypertrophy split. Push / pull / legs structure with controlled tempo and progressive volume on every muscle group.',
+      who: 'Lifters with at least a few months of training who want visible muscle growth with joint-friendly volume.',
+      goal: 'Add quality size across the whole body while keeping technique strict and recovery managed.',
+    },
+    trains: ['HYPERTROPHY', 'TECHNIQUE', 'CORE', 'POSTURE'],
+    equipment: ['Rubber-Coated Dumbbells', 'Cable Crossover Machine', 'Incline Bench', 'Smith Machine'],
+    img: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Athlete performing dumbbell curls in a dark gym',
+    week: [
+      { day: 'DAY 01', title: 'PUSH', exercises: ['Bench Press', 'Incline DB Press', 'Cable Fly', 'Triceps'] },
+      { day: 'DAY 02', title: 'PULL', exercises: ['Lat Pulldown', 'Seated Row', 'Face Pull', 'Biceps'] },
+      { day: 'DAY 03', title: 'LEGS', exercises: ['Leg Press', 'Leg Curl', 'Leg Extension', 'Calves'] },
+    ],
+  },
+  {
+    id: 'beginner-fitness', num: '04', name: 'BEGINNER FITNESS', slug: 'beginner-fitness',
+    category: 'GENERAL', difficulty: 'BEGINNER', duration: '8 WEEKS', focus: 'MOVEMENT BASICS',
+    sessions: '3 SESSIONS / WEEK', featured: false,
+    desc: 'Start from zero with simple full-body sessions. Learn squats, pushes, pulls and carries in a low-pressure, coach-led setting.',
+    overview: {
+      what: 'An 8-week on-ramp for total beginners. Simple full-body workouts that teach the basic movement patterns step by step.',
+      who: 'First-time gym members, students, and anyone returning after a long break.',
+      goal: 'Build confidence on the gym floor and a consistent training habit.',
+    },
+    trains: ['MOVEMENT', 'STRENGTH', 'CORE', 'CONSISTENCY'],
+    equipment: ['Rubber-Coated Dumbbells', 'Resistance Band Set', 'Flat Utility Bench', 'Yoga Mat'],
+    img: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Modern gym floor with dumbbell racks',
+    week: [
+      { day: 'DAY 01', title: 'FULL BODY A', exercises: ['Bodyweight Squat', 'Push-up', 'Dumbbell Row', 'Plank'] },
+      { day: 'DAY 02', title: 'FULL BODY B', exercises: ['Goblet Squat', 'Shoulder Press', 'Glute Bridge', 'Mountain Climbers'] },
+      { day: 'DAY 03', title: 'FULL BODY A + WALK', exercises: ['Lunges', 'Incline Push-up', 'Band Pull Apart', '20 Min Walk'] },
+    ],
+  },
+  {
+    id: 'functional-fitness', num: '05', name: 'FUNCTIONAL FITNESS', slug: 'functional-fitness',
+    category: 'FUNCTIONAL', difficulty: 'BEGINNER FRIENDLY', duration: '8 WEEKS', focus: 'MOVEMENT QUALITY',
+    sessions: '3 SESSIONS / WEEK', featured: false,
+    desc: 'Kettlebells, cables and open-turf movement. Carry, hinge, push, pull and rotate like an athlete.',
+    overview: {
+      what: 'An 8-week functional block using kettlebells, carries, hinges and rotational work for real-world strength.',
+      who: 'Members who want everyday capability — lifting, carrying, moving well — not just gym numbers.',
+      goal: 'Move better in daily life with stronger hips, core and shoulders.',
+    },
+    trains: ['FUNCTIONAL', 'CORE', 'MOBILITY', 'CARRIES'],
+    equipment: ['Kettlebell Set', 'Functional Trainer', 'Medicine Balls', 'Plyometric Box'],
+    img: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Functional training zone with rigs and turf',
+    week: [
+      { day: 'DAY 01', title: 'LOWER + CARRY', exercises: ['Kettlebell Swings', 'Goblet Squat', 'Suitcase Carry', 'Core'] },
+      { day: 'DAY 02', title: 'PUSH + PULL', exercises: ['Push-up', 'Band Row', 'Overhead Carry', 'Plank'] },
+      { day: 'DAY 03', title: 'CONDITIONING', exercises: ['KB Circuit', 'Sled Push', 'Box Step-up', 'Breathing'] },
+    ],
+  },
+  {
+    id: 'womens-strength', num: '06', name: "WOMEN'S STRENGTH", slug: 'womens-strength',
+    category: 'STRENGTH', difficulty: 'ALL LEVELS', duration: '10 WEEKS', focus: 'STRENGTH + TONE',
+    sessions: '3 SESSIONS / WEEK', featured: true,
+    desc: 'Strength-first training designed for women — squat, hinge, press and pull progressions in a focused, supportive environment.',
+    overview: {
+      what: 'A 10-week strength program for women, progressing from goblet squats to confident barbell work with full coaching support.',
+      who: 'Women who want real strength results with a coach who understands the starting point.',
+      goal: 'Build strength and confidence on the main lifts with sensible, progressive programming.',
+    },
+    trains: ['STRENGTH', 'TECHNIQUE', 'CORE', 'MOBILITY'],
+    equipment: ['Rubber-Coated Dumbbells', 'Olympic Barbell', 'Commercial Squat Rack', 'Resistance Band Set'],
+    img: 'https://images.unsplash.com/photo-1571731956672-f2b94d7dd0cb?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Woman strength training with dumbbells in a dark gym',
+    week: [
+      { day: 'DAY 01', title: 'LOWER BODY', exercises: ['Goblet Squat', 'Romanian Deadlift', 'Hip Thrust', 'Core'] },
+      { day: 'DAY 02', title: 'UPPER BODY', exercises: ['Incline DB Press', 'Lat Pulldown', 'Lateral Raise', 'Arms'] },
+      { day: 'DAY 03', title: 'FULL BODY', exercises: ['Deadlift', 'Push-up', 'Row', 'Plank Series'] },
+    ],
+  },
+  {
+    id: 'athletic-performance', num: '07', name: 'ATHLETIC PERFORMANCE', slug: 'athletic-performance',
+    category: 'CONDITIONING', difficulty: 'ADVANCED', duration: '12 WEEKS', focus: 'SPEED + POWER',
+    sessions: '4 SESSIONS / WEEK', featured: false,
+    desc: 'Speed, power and agility for field and court athletes. Sprint mechanics, plyometrics and explosive lifts, periodized by season.',
+    overview: {
+      what: 'A 12-week performance block combining sprint work, jumps and explosive barbell training for competitive athletes.',
+      who: 'Cricket, football, kabaddi and court-sport athletes who want to move faster and hit harder.',
+      goal: 'Improve first-step speed, jumping power and on-field resilience.',
+    },
+    trains: ['SPEED', 'POWER', 'AGILITY', 'STRENGTH'],
+    equipment: ['Plyometric Box', 'Push Sled', 'Olympic Barbell', 'Battle Rope'],
+    img: 'https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Athlete sprinting on an indoor turf track',
+    week: [
+      { day: 'DAY 01', title: 'SPEED', exercises: ['Sprint Mechanics', 'Sled Push', 'Broad Jumps', 'Core'] },
+      { day: 'DAY 02', title: 'EXPLOSIVE STRENGTH', exercises: ['Power Clean', 'Front Squat', 'Trap Bar Jump', 'Med Ball Throws'] },
+      { day: 'DAY 03', title: 'AGILITY + CONDITIONING', exercises: ['Shuttle Runs', 'Ladder Drills', 'Bike Intervals', 'Mobility'] },
+    ],
+  },
+  {
+    id: 'mobility-recovery', num: '08', name: 'MOBILITY & RECOVERY', slug: 'mobility-recovery',
+    category: 'GENERAL', difficulty: 'ALL LEVELS', duration: '6 WEEKS', focus: 'JOINT HEALTH',
+    sessions: '2 SESSIONS / WEEK', featured: false,
+    desc: 'Structured mobility work for desk-bound days and heavy training weeks. Hips, shoulders and spine, trained gently and consistently.',
+    overview: {
+      what: 'A 6-week mobility track — guided hip, shoulder and spine sessions paired with breathing and recovery habits.',
+      who: 'Office professionals and hard-training members who feel stiff, tight or beat-up.',
+      goal: 'Move freely again and recover faster between hard sessions.',
+    },
+    trains: ['MOBILITY', 'BREATHING', 'CORE', 'RECOVERY'],
+    equipment: ['Yoga Mat', 'Resistance Band Set', 'Foam Roller', 'Medicine Balls'],
+    img: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Controlled kettlebell movement in a training space',
+    week: [
+      { day: 'DAY 01', title: 'HIPS + SPINE', exercises: ['90/90 Hip Flow', 'Cat-Camel', 'Hip Flexor Stretch', 'Breathing Ladder'] },
+      { day: 'DAY 02', title: 'SHOULDERS + T-SPINE', exercises: ['Band Dislocates', 'Wall Slides', 'Thoracic Rotations', 'Dead Hangs'] },
+    ],
+  },
+  {
+    id: 'weight-training-basics', num: '09', name: 'WEIGHT TRAINING BASICS', slug: 'weight-training-basics',
+    category: 'STRENGTH', difficulty: 'BEGINNER', duration: '8 WEEKS', focus: 'LIFTING FUNDAMENTALS',
+    sessions: '3 SESSIONS / WEEK', featured: false,
+    desc: 'Learn every machine and barbell movement on the floor with correct technique. The complete first course in weight training.',
+    overview: {
+      what: 'An 8-week guided tour of the gym — every rack, bench and machine taught hands-on with light loads and strict form.',
+      who: 'Members intimidated by barbells and machines, or self-taught lifters with gaps in technique.',
+      goal: 'Use the whole floor safely and confidently with clean technique on every movement.',
+    },
+    trains: ['TECHNIQUE', 'STRENGTH', 'MACHINES', 'CORE'],
+    equipment: ['Olympic Barbell', 'Commercial Squat Rack', 'Lat Pulldown Machine', 'Seated Row Machine'],
+    img: 'https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Athlete gripping an Olympic barbell',
+    week: [
+      { day: 'DAY 01', title: 'RACK + BARBELL', exercises: ['Back Squat (light)', 'Bench Press (light)', 'Barbell Row', 'Plank'] },
+      { day: 'DAY 02', title: 'MACHINES', exercises: ['Leg Press', 'Lat Pulldown', 'Chest Press', 'Leg Curl'] },
+      { day: 'DAY 03', title: 'FULL BODY', exercises: ['Goblet Squat', 'Shoulder Press', 'Seated Row', 'Core'] },
+    ],
+  },
+  {
+    id: 'home-to-gym', num: '10', name: 'HOME-TO-GYM TRANSITION', slug: 'home-to-gym',
+    category: 'GENERAL', difficulty: 'BEGINNER FRIENDLY', duration: '6 WEEKS', focus: 'SMOOTH TRANSITION',
+    sessions: '3 SESSIONS / WEEK', featured: false,
+    desc: 'Already training at home? Transition your bodyweight and dumbbell work into structured gym training without losing momentum.',
+    overview: {
+      what: 'A 6-week bridge program that converts home-training fitness into gym-floor strength using familiar movement patterns.',
+      who: 'Home workout graduates and beginners moving to their first commercial gym.',
+      goal: 'Feel at home on the gym floor within two weeks and progress steadily from there.',
+    },
+    trains: ['STRENGTH', 'MOVEMENT', 'MACHINES', 'CORE'],
+    equipment: ['Rubber-Coated Dumbbells', 'Flat Utility Bench', 'Cable Crossover Machine', 'Resistance Band Set'],
+    img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1000&auto=format&fit=crop',
+    alt: 'Athlete training with battle ropes on the gym floor',
+    week: [
+      { day: 'DAY 01', title: 'FAMILIAR FIRST', exercises: ['Dumbbell Squat', 'DB Bench Press', 'One-Arm Row', 'Plank'] },
+      { day: 'DAY 02', title: 'MACHINES INTRO', exercises: ['Leg Press', 'Chest Press', 'Lat Pulldown', 'Core'] },
+      { day: 'DAY 03', title: 'BARBELL BRIDGE', exercises: ['Empty Bar Squat', 'Empty Bar Bench', 'Romanian Deadlift', 'Carries'] },
+    ],
+  },
+];
+
+export function getProgramBySlug(slug) {
+  return PROGRAMS.find((p) => p.slug === slug);
+}
+
+export const SESSION_BLOCKS = [
+  { k: 'WARM-UP', v: '10 MIN', d: 'Joint prep, activation and ramp-up sets.' },
+  { k: 'MAIN LIFT', v: '4 × 8', d: 'Primary strength movement of the day.' },
+  { k: 'ACCESSORY', v: '3 × 12', d: 'Support muscles with strict tempo.' },
+  { k: 'CONDITIONING', v: '12 MIN', d: 'Erg, sled or bike finisher.' },
+  { k: 'RECOVERY', v: '5 MIN', d: 'Breathing, mobility and cooldown.' },
+];

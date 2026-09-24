@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Nexus Athletica - Elite Commercial Gym</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Barlow+Condensed:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+              "outline": "#8d937a",
+              "secondary": "#c6c6c9",
+              "outline-variant": "#434934",
+              "on-secondary-container": "#b4b5b7",
+              "primary-container": "#bff525",
+              "surface-bright": "#373b2d",
+              "tertiary-container": "#e5dff5",
+              "surface-dim": "#111509",
+              "on-tertiary-fixed": "#1c1a29",
+              "on-secondary": "#2f3133",
+              "on-tertiary-fixed-variant": "#484556",
+              "surface": "#111509",
+              "on-primary-fixed-variant": "#394d00",
+              "secondary-container": "#454749",
+              "on-background": "#e1e4d0",
+              "on-tertiary-container": "#666274",
+              "error": "#ffb4ab",
+              "secondary-fixed-dim": "#c6c6c9",
+              "tertiary-fixed": "#e5dff5",
+              "on-tertiary": "#312e3f",
+              "on-error-container": "#ffdad6",
+              "secondary-fixed": "#e2e2e5",
+              "surface-container-lowest": "#0c0f05",
+              "primary-fixed-dim": "#a5d700",
+              "inverse-primary": "#4d6700",
+              "on-surface": "#e1e4d0",
+              "error-container": "#93000a",
+              "on-primary-container": "#526d00",
+              "surface-container-high": "#282b1e",
+              "surface-variant": "#333628",
+              "tertiary": "#ffffff",
+              "primary-fixed": "#bff525",
+              "background": "#111509",
+              "on-error": "#690005",
+              "surface-tint": "#a5d700",
+              "on-surface-variant": "#c3c9ae",
+              "inverse-surface": "#2e3224",
+              "surface-container": "#1d2114",
+              "on-primary-fixed": "#151f00",
+              "on-secondary-fixed-variant": "#454749",
+              "primary": "#ffffff",
+              "inverse-surface": "#e1e4d0",
+              "tertiary-fixed-dim": "#c9c4d9",
+              "surface-container-highest": "#333628",
+              "on-secondary-fixed": "#1a1c1e",
+              "on-primary": "#273500",
+              "surface-container-low": "#191d11"
+            },
+            "borderRadius": {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+            "spacing": {
+              "columns": "12",
+              "margin-screen": "24px",
+              "gutter-sm": "8px",
+              "grid-type": "fluid",
+              "gutter-xs": "4px",
+              "gutter-lg": "24px",
+              "gutter-md": "16px"
+            },
+            "fontFamily": {
+              "headline-md": ["Barlow Condensed"],
+              "display-hero": ["Anton"],
+              "headline-lg-mobile": ["Anton"],
+              "display-hero-mobile": ["Anton"],
+              "label-sm": ["JetBrains Mono"],
+              "body-lg": ["Barlow Condensed"],
+              "body-md": ["Barlow Condensed"],
+              "headline-lg": ["Anton"]
+            },
+            "fontSize": {
+              "headline-md": ["24px", { "lineHeight": "1.2", "letterSpacing": "0.02em", "fontWeight": "700" }],
+              "display-hero": ["72px", { "lineHeight": "1.0", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+              "headline-lg-mobile": ["28px", { "lineHeight": "1.1", "letterSpacing": "0", "fontWeight": "400" }],
+              "display-hero-mobile": ["48px", { "lineHeight": "1.0", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+              "label-sm": ["12px", { "lineHeight": "1.3", "letterSpacing": "0.05em", "fontWeight": "500" }],
+              "body-lg": ["18px", { "lineHeight": "1.4", "letterSpacing": "0.01em", "fontWeight": "500" }],
+              "body-md": ["16px", { "lineHeight": "1.5", "letterSpacing": "0.01em", "fontWeight": "400" }],
+              "headline-lg": ["40px", { "lineHeight": "1.1", "letterSpacing": "0", "fontWeight": "400" }]
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-fixed">
+<!-- Top Bar / Navigation -->
+<header class="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant">
+<div class="flex justify-between items-center w-full px-margin-screen py-gutter-md max-w-7xl mx-auto">
+<div class="flex items-center space-x-6">
+<a class="font-headline-lg text-headline-lg text-primary tracking-tight" href="#">NEXUS ATHLETICA</a>
+<div class="hidden xl:flex items-center space-x-2 font-label-sm text-on-surface-variant bg-surface-container px-3 py-1 border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>OPEN TODAY 05:00 — 23:00</span>
+</div>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-headline-md text-headline-md text-primary hover:text-primary-fixed transition-colors" href="#train">TRAIN</a>
+<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary-fixed transition-colors" href="#programs">PROGRAMS</a>
+<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary-fixed transition-colors" href="#equipment">EQUIPMENT</a>
+<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary-fixed transition-colors" href="#coaches">COACHES</a>
+<a class="font-headline-md text-headline-md text-on-surface-variant hover:text-primary-fixed transition-colors" href="#membership">MEMBERSHIP</a>
+</nav>
+<div class="flex items-center space-x-4">
+<a class="hidden sm:inline-block font-label-sm text-on-surface hover:text-primary px-3 py-2" href="#login">LOGIN</a>
+<a class="bg-primary-container text-on-primary-fixed font-label-sm uppercase px-5 py-3 hover:bg-primary-fixed-dim transition-all flex items-center space-x-2" href="#membership">
+<span>JOIN NEXUS</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex flex-col justify-between overflow-hidden border-b border-outline-variant" id="train">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background/60 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Immersive high-end commercial gym floor featuring heavy Olympic barbells, custom power racks, dramatic overhead industrial lighting piercing through atmospheric haze, dark heavy-duty equipment aesthetic, high contrast metallic textures, professional sports facility." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsZIpIFcVZeFDk-N_pTJYkYA-rcAf9zaiZxIq-S7kJ5lgsPuZo6ipCQ1w1KPnFxgoqiOhgbG5sAUWcGQjrFrU3uaFTUKimKjuyVp0KfZ1SLMLMK7kCp6ebstlCo6hBiez7r7IFVaQhtzPpLo7MOkQ43IB7rYq338pEmJv0DShbiVDloyBjX2QVmBxcIULrwceI7RKUwk2gwR32WWGJ9oe_KeBJwnx-_op9DzuyLCoK0alrwlsUAMn74Q"/>
+</div>
+<div class="relative z-20 max-w-7xl w-full mx-auto px-margin-screen pt-12 flex justify-between items-start">
+<div class="font-label-sm text-primary-fixed flex items-center space-x-2 bg-surface/80 border border-outline-variant px-3 py-1.5 backdrop-blur-sm">
+<span class="material-symbols-outlined text-base">bolt</span>
+<span>NEXUS ATHLETICA / PERFORMANCE FACILITY</span>
+</div>
+<div class="hidden lg:flex flex-col text-right font-label-sm text-on-surface-variant">
+<span>COORDINATES: 34.0522° N, 118.2437° W</span>
+<span>SECTOR 04 / STRENGTH WING</span>
+</div>
+</div>
+<div class="relative z-20 max-w-7xl w-full mx-auto px-margin-screen py-16">
+<div class="max-w-4xl">
+<h1 class="font-display-hero text-display-hero md:text-[96px] text-primary tracking-tight mb-6">
+              BUILT FOR <span class="text-primary-container">MORE.</span>
+</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl mb-10">
+              Train with elite equipment, structured programming and a performance-focused community built to push your limits.
+            </p>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center space-y-4 sm:space-y-0 sm:space-x-4">
+<a class="bg-primary-container text-on-primary-fixed font-label-sm uppercase px-8 py-4 text-center hover:bg-primary-fixed-dim transition-all flex items-center justify-center space-x-3" href="#membership">
+<span>ENTER NEXUS</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="border border-outline hover:border-primary-container text-primary font-label-sm uppercase px-8 py-4 text-center transition-all" href="#equipment">
+                EXPLORE THE FACILITY
+              </a>
+</div>
+</div>
+<!-- Hotspots -->
+<div class="absolute bottom-32 right-12 hidden xl:block z-30">
+<div class="bg-surface/90 border border-outline-variant p-4 backdrop-blur-md max-w-xs">
+<div class="flex items-center space-x-2 text-primary-fixed font-label-sm mb-1">
+<span class="material-symbols-outlined text-sm">fitness_center</span>
+<span>ACTIVE HOTSPOT // 01</span>
+</div>
+<p class="font-headline-md text-on-surface text-lg">COMPETITION OLYMPIC PLATFORM</p>
+<p class="font-body-md text-on-surface-variant text-sm mt-1">Unglazed solid maple inserts with heavy-duty shock absorption dampening.</p>
+</div>
+</div>
+</div>
+<div class="relative z-20 max-w-7xl w-full mx-auto px-margin-screen pb-8 flex justify-between items-end border-t border-outline-variant/30 pt-6">
+<div class="font-label-sm text-on-surface-variant">
+            EST. 2014 PERFORMANCE / STRENGTH / CONDITIONING
+          </div>
+<div class="font-label-sm text-primary-fixed flex items-center space-x-2 animate-bounce">
+<span>SCROLL TO EXPLORE</span>
+<span class="material-symbols-outlined text-sm">arrow_downward</span>
+</div>
+</div>
+</section>
+<!-- Equipment Showcase ("THE TOOLS MATTER.") -->
+<section class="py-24 bg-surface border-b border-outline-variant" id="equipment">
+<div class="max-w-7xl mx-auto px-margin-screen">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+<div>
+<div class="font-label-sm text-primary-fixed mb-2">HARDWARE SPECIFICATIONS</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">THE TOOLS MATTER.</h2>
+</div>
+<p class="font-body-lg text-body-lg text-secondary max-w-md mt-4 md:mt-0">
+              Professional-grade equipment engineered for serious training. No compromises, heavy gauge steel only.
+            </p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<div class="bg-surface-container border border-outline-variant p-8 relative group hover:border-primary-container transition-all">
+<div class="font-display-hero text-6xl text-outline-variant/40 mb-6 group-hover:text-primary-container transition-colors">01</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">STRENGTH</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Eleiko calibration discs, monolithic power racks, custom multi-grip pull-up structures, and deadlift platforms built for maximum load.</p>
+<div class="flex items-center space-x-2 font-label-sm text-primary-fixed">
+<span>VIEW SPEC SHEET</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-8 relative group hover:border-primary-container transition-all">
+<div class="font-display-hero text-6xl text-outline-variant/40 mb-6 group-hover:text-primary-container transition-colors">02</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">CONDITIONING</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Concept2 SkiErgs, Assault AirBikes, self-powered curved treadmills, and heavy sled tracks designed for anaerobic capacity building.</p>
+<div class="flex items-center space-x-2 font-label-sm text-primary-fixed">
+<span>VIEW SPEC SHEET</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-8 relative group hover:border-primary-container transition-all">
+<div class="font-display-hero text-6xl text-outline-variant/40 mb-6 group-hover:text-primary-container transition-colors">03</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">FUNCTIONAL</h3>
+<p class="font-body-md text-on-surface-variant mb-6">Urethane dumbbells up to 150lbs, adjustable cable columns with dual weight stacks, kettlebells, slam balls, and gymnastics rings.</p>
+<div class="flex items-center space-x-2 font-label-sm text-primary-fixed">
+<span>VIEW SPEC SHEET</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Facility ("THIS IS NOT A COMMERCIAL GYM.") -->
+<section class="py-24 bg-background relative overflow-hidden border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin-screen">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<div class="font-label-sm text-primary-fixed mb-2">FACILITY ARCHITECTURE</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">THIS IS NOT A COMMERCIAL GYM.</h2>
+<p class="font-body-lg text-body-lg text-secondary mb-8">
+                Designed by strength coaches and elite athletes. Every square foot of Nexus Athletica is optimized for output, airflow, acoustics, and uncompromising focus.
+              </p>
+<div class="grid grid-cols-2 gap-6 pt-6 border-t border-outline-variant">
+<div>
+<div class="font-display-hero text-4xl text-primary mb-1">18,000</div>
+<div class="font-label-sm text-on-surface-variant">SQ FT TRAINING FLOOR</div>
+</div>
+<div>
+<div class="font-display-hero text-4xl text-primary mb-1">03</div>
+<div class="font-label-sm text-on-surface-variant">DEDICATED ZONES</div>
+</div>
+<div>
+<div class="font-display-hero text-4xl text-primary mb-1">50+</div>
+<div class="font-label-sm text-on-surface-variant">STATIONS &amp; RIGS</div>
+</div>
+<div>
+<div class="font-display-hero text-4xl text-primary mb-1">05:00</div>
+<div class="font-label-sm text-on-surface-variant">DAILY OPENING TIME</div>
+</div>
+</div>
+</div>
+<div class="relative h-[450px] border border-outline-variant">
+<div class="absolute inset-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Expansive industrial commercial gym interior with matte black steel rigs, polished concrete floors, high ceilings with exposed ductwork, dramatic directional lighting casting sharp shadows across heavy duty training equipment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAduA5y_fEg4dbb5O67i7QiL4qfRZsJBxObqYzKoiVx0Waz2XLb-PVrUob0IZxukIdj_rl0GNK1zjeqXwMssOH3jqmmV_fVOOnsAMT8aFl-SCsE5PL9w-Ozvk0pts8uwCPByUAED1SEJ-RoqpT2cSI1j-Z7YcH2QU2EWti-BdzX5DW3vqnKc9mdvvdLybB78aX_2t5bTsFPtZtJIvllPXV1MaHof59bSmTB4UZyIp9v6X1yoJ0QgdJLFg"/>
+</div>
+<div class="absolute bottom-4 left-4 right-4 bg-surface/90 border border-outline-variant p-4 backdrop-blur-md flex justify-between items-center">
+<span class="font-label-sm text-primary">MAIN STRENGTH WING / SECTOR A</span>
+<span class="font-label-sm text-on-surface-variant">LIVE CAPACITY: 28%</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Training Zones ("CHOOSE YOUR BATTLEFIELD.") -->
+<section class="py-24 bg-surface border-b border-outline-variant" id="zones">
+<div class="max-w-7xl mx-auto px-margin-screen">
+<div class="mb-16">
+<div class="font-label-sm text-primary-fixed mb-2">LAYOUT DIRECTORY</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">CHOOSE YOUR BATTLEFIELD.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="relative h-80 border border-outline-variant group overflow-hidden flex flex-col justify-end p-8">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heavy lifting strength floor with rows of robust power racks, loaded Olympic barbells, heavy rubber flooring, and athletes training under industrial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBB7qiG_AQWVYRDyqGlmxKO0fJViHcLGDW_axftdgousXjse60xOUGbZ_lZAheK4f_QCsJJw_9FXqPnaeJfI-Up3USkRN5xLFB2AiIULbvsb95ziS_LmfmDN4S3j11NQNEX3FdL-o1gu-S13MJjssAy5x4J-Z16-l0hYROap01Jm2yvIiRPDZkaaCntsQt7K73wruCA4wGApvnXFUxmbPQmXVo6dDdxKgdt8mBqAwFuhXpjwZ6zXQZNew"/>
+</div>
+<div class="relative z-20">
+<span class="font-label-sm text-primary-fixed">ZONE 01</span>
+<h3 class="font-headline-md text-headline-md text-primary text-2xl mt-1 mb-2">STRENGTH FLOOR</h3>
+<p class="font-body-md text-on-surface-variant">Heavy compound movements, power racks, and deadlift platforms.</p>
+</div>
+</div>
+<div class="relative h-80 border border-outline-variant group overflow-hidden flex flex-col justify-end p-8">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Conditioning lab with a row of curved self-powered treadmills, air bikes, and rowing ergometers in a dark industrial training hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6t4cPyLGIX4NWfrLTFv397ReVIXxHFuAUnylJNfr_V8WZESPxVUTmUQ0TPoqHWRSsLRxCHjV0NNouo8ODmjZF-VBoMS3I_CSLMVqnhaAltCcE_zm_lnXvQT4GNhLvMlgnFMLIF5veGvWO0xGnwtAHc7C6l6oMnPJSYL917VV_Uu891-lIrow0Fp88yyUCECZUE-IkRM-VV2LpISGtO5i4euPc1ejFOJAxsCKSEytz9rRF8viRYdlWEQ"/>
+</div>
+<div class="relative z-20">
+<span class="font-label-sm text-primary-fixed">ZONE 02</span>
+<h3 class="font-headline-md text-headline-md text-primary text-2xl mt-1 mb-2">CONDITIONING LAB</h3>
+<p class="font-body-md text-on-surface-variant">High-output aerobic equipment, turf tracks, and sleds.</p>
+</div>
+</div>
+<div class="relative h-80 border border-outline-variant group overflow-hidden flex flex-col justify-end p-8">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Functional fitness area with modular pull-up bars, gymnastics rings, kettlebells, and open floor space for athletic conditioning." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3ch7n77BR34hoRx3DFF847PIv5YbbEXZpZjJjnuXWeJZC5vw4QTO8smApmq17HIhP8ATSt910osLclv-qx5fNxR7LJG_ZOJPMIWyXAvWKKlSSf0lNxQQwgIgJBypRzsZlE_leCp-7-fJ5aN5yPzULSzZLg8zsvGnccxlzrtEkt43r1y_TqeRBDyb6ejosbRQySNEgnKaZDIN0wFiuzwLcuObtNXRyUXwVT5WpiL815j1lAqGezKYfIQ"/>
+</div>
+<div class="relative z-20">
+<span class="font-label-sm text-primary-fixed">ZONE 03</span>
+<h3 class="font-headline-md text-headline-md text-primary text-2xl mt-1 mb-2">FUNCTIONAL AREA</h3>
+<p class="font-body-md text-on-surface-variant">Unrestricted movement space, rigs, and accessory tools.</p>
+</div>
+</div>
+<div class="relative h-80 border border-outline-variant group overflow-hidden flex flex-col justify-end p-8">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"></div>
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist recovery space with specialized mobility tools, foam rollers, stretching zones, and calm low-key lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOIViVQz4kN00zEfJ6Gc1ofK0Ms7ncQWR072Nzn39wSCzZJV7vV9AZa9tSUcv1DVB22vHcJdxBZ6oDXBZ6x-0Gvd_2udDgZ9A5NJ1BoPmITtYklwkhsP7xV4aSsrAxh78JbeGAd8Yiy-6OlEF882lVsr7FwmzSb-hbfU3Csl_tfRaLxvIX1BMOfjZpTR_eRgwBp2aNbp1Gsipx6-kFZQMvXgidhMWHyuuhSxiJZh7wnQyhzK2e0swVPQ"/>
+</div>
+<div class="relative z-20">
+<span class="font-label-sm text-primary-fixed">ZONE 04</span>
+<h3 class="font-headline-md text-headline-md text-primary text-2xl mt-1 mb-2">RECOVERY SPACE</h3>
+<p class="font-body-md text-on-surface-variant">Mobility work, regeneration tools, and cool-down protocols.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Performance Programs ("TRAIN WITH INTENT.") -->
+<section class="py-24 bg-background border-b border-outline-variant" id="programs">
+<div class="max-w-7xl mx-auto px-margin-screen">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+<div>
+<div class="font-label-sm text-primary-fixed mb-2">STRUCTURED SYSTEMS</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">TRAIN WITH INTENT.</h2>
+</div>
+<p class="font-body-lg text-body-lg text-secondary max-w-md mt-4 md:mt-0">
+              Proven periodized programs designed to build absolute strength, explosive power, and lean functional mass.
+            </p>
+</div>
+<div class="space-y-4">
+<div class="bg-surface-container border border-outline-variant p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between hover:border-primary-container transition-all group">
+<div class="flex items-start md:items-center space-x-6 mb-4 md:mb-0">
+<span class="font-display-hero text-3xl text-outline-variant">01</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary text-xl">APEX STRENGTH HYPERTHROPHY</h3>
+<p class="font-body-md text-on-surface-variant mt-1">Four-day upper/lower split focused on mechanical tension and progressive overload.</p>
+</div>
+</div>
+<div class="flex items-center space-x-6 justify-between md:justify-end">
+<div class="hidden sm:block text-right font-label-sm text-on-surface-variant">
+<div>DIFFICULTY: ADVANCED</div>
+<div>DURATION: 12 WEEKS</div>
+</div>
+<a class="w-10 h-10 bg-surface border border-outline-variant flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-fixed group-hover:border-primary-container transition-all" href="#membership">
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between hover:border-primary-container transition-all group">
+<div class="flex items-start md:items-center space-x-6 mb-4 md:mb-0">
+<span class="font-display-hero text-3xl text-outline-variant">02</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary text-xl">TACTICAL ENGINE &amp; CAPACITY</h3>
+<p class="font-body-md text-on-surface-variant mt-1">Engineered for high-output conditioning, threshold pacing, and work capacity.</p>
+</div>
+</div>
+<div class="flex items-center space-x-6 justify-between md:justify-end">
+<div class="hidden sm:block text-right font-label-sm text-on-surface-variant">
+<div>DIFFICULTY: INTERMEDIATE</div>
+<div>DURATION: 8 WEEKS</div>
+</div>
+<a class="w-10 h-10 bg-surface border border-outline-variant flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-fixed group-hover:border-primary-container transition-all" href="#membership">
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-6 md:p-8 flex flex-col md:flex-row md:items-center justify-between hover:border-primary-container transition-all group">
+<div class="flex items-start md:items-center space-x-6 mb-4 md:mb-0">
+<span class="font-display-hero text-3xl text-outline-variant">03</span>
+<div>
+<h3 class="font-headline-md text-headline-md text-primary text-xl">OLYMPIC LIFTING FOUNDATION</h3>
+<p class="font-body-md text-on-surface-variant mt-1">Snatch and clean &amp; jerk mechanics, positional strength, and explosive power transfer.</p>
+</div>
+</div>
+<div class="flex items-center space-x-6 justify-between md:justify-end">
+<div class="hidden sm:block text-right font-label-sm text-on-surface-variant">
+<div>DIFFICULTY: ALL LEVELS</div>
+<div>DURATION: 10 WEEKS</div>
+</div>
+<a class="w-10 h-10 bg-surface border border-outline-variant flex items-center justify-center text-primary group-hover:bg-primary-container group-hover:text-on-primary-fixed group-hover:border-primary-container transition-all" href="#membership">
+<span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Coaches ("THE PEOPLE BEHIND THE PUSH.") -->
+<section class="py-24 bg-surface border-b border-outline-variant" id="coaches">
+<div class="max-w-7xl mx-auto px-margin-screen">
+<div class="mb-16">
+<div class="font-label-sm text-primary-fixed mb-2">ELITE COACHING STAFF</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">THE PEOPLE BEHIND THE PUSH.</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="border border-outline-variant bg-surface-container">
+<div class="h-96 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of professional athletic coach Marcus Reed standing inside a high-end commercial gym wearing rugged black athletic apparel, intense serious expression, dramatic high-contrast lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmpo9hLEyqREcYEfjDpPxXl8jjN_qaumWhyDXqBeqKyJYva2yVBj5w9UsJ-XInJDzsSa3c7EC1THdG-XREY5_cf2w2khDHGeE6TN6P_cX_mlSs17wPEbOM68Iq5WIcVfUl6d4IAFKX0NshnYnHIozDZjaFTJUkvIkpKs4MNg_eWMnBqd4v55bxKWkg76XUKBEttJpTDoGkmY_lpCRPwhbnLb1KAJCfzZEZg5upr14lBW5CwZIWV6ys1Q"/>
+</div>
+<div class="p-6">
+<div class="font-label-sm text-primary-fixed mb-1">HEAD OF STRENGTH</div>
+<h3 class="font-headline-md text-headline-md text-primary text-2xl mb-2">MARCUS REED</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Former collegiate powerlifting coach specializing in absolute strength acquisition and injury prevention.</p>
+</div>
+</div>
+<div class="border border-outline-variant bg-surface-container">
+<div class="h-96 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of conditioning coach Elena Vance in a modern gym setting, athletic stance, focused demeanor, stark industrial lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC59lbdCkjopoP_CXdQqPNMiLZ2NKAvaY0g52GqzbFgXstubDY4x-Z5TaImtH9RO8cKU8CSggLmSsDou6957jSiRDFqE5N5TNdyqyn2oz_GW_oMjQBWp48KJWVDfE-QOY0_Qj4nsQId6cYzWq2tp6akBxAqjyG7biwCWL_NYktFPJuu-QbUL7fZKXP_zR93XRod5Qadm92gJb4DGcLwHU_DYNaeBrr1MBL-xPq6T_hAYWkPLF3kr2KKlw"/>
+</div>
+<div class="p-6">
+<div class="font-label-sm text-primary-fixed mb-1">DIRECTOR OF CONDITIONING</div>
+<h3 class="font-headline-md text-headline-md text-primary text-2xl mb-2">ELENA VANCE</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Specialized in tactical energy systems, threshold pacing, and high-intensity structural work capacity.</p>
+</div>
+</div>
+<div class="border border-outline-variant bg-surface-container">
+<div class="h-96 relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait of senior performance specialist Jaxson Cole inside a heavy-duty training facility, sharp shadows, powerful posture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA784verkfqS39NnbUw3sFnnwXEYJHREJAdmOp3870ggHoYHM8hOxN5bzvY1BCKmxAOPjLj0g1xyQ9wmHzE0PE59GdLA0LX9b1UZsXhlbOqTa01LV7sd2HUZK-Uus_wX5rA7K_7ygt0aYakW3TmO2TZsJKPiymR4zDKhHi5gazRf2mk51q1jGpNwpYVkVJOXhDuR8d42MGM0POOYND4Uzm4ewXwIKBQIGt_VeZg2SjkUVeu9cVgFR7P-g"/>
+</div>
+<div class="p-6">
+<div class="font-label-sm text-primary-fixed mb-1">SENIOR PERFORMANCE COACH</div>
+<h3 class="font-headline-md text-headline-md text-primary text-2xl mb-2">JAXSON COLE</h3>
+<p class="font-body-md text-on-surface-variant text-sm">Olympic weightlifting specialist focusing on bar path efficiency, mobility, and explosive kinetic output.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Performance Data ("NUMBERS DON'T LIE.") -->
+<section class="py-24 bg-background border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin-screen">
+<div class="text-center mb-16">
+<div class="font-label-sm text-primary-fixed mb-2">METRICS &amp; TRACK RECORD</div>
+<h2 class="font-headline-lg text-headline-lg text-primary">NUMBERS DON'T LIE.</h2>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+<div class="bg-surface-container border border-outline-variant p-6">
+<div class="font-display-hero text-4xl lg:text-5xl text-primary-container mb-2">10,000+</div>
+<div class="font-label-sm text-on-surface-variant">ACTIVE MEMBERS</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-6">
+<div class="font-display-hero text-4xl lg:text-5xl text-primary-container mb-2">50+</div>
+<div class="font-label-sm text-on-surface-variant">EQUIPMENT STATIONS</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-6">
+<div class="font-display-hero text-4xl lg:text-5xl text-primary-container mb-2">25+</div>
+<div class="font-label-sm text-on-surface-variant">ELITE COACHES</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-6">
+<div class="font-display-hero text-4xl lg:text-5xl text-primary-container mb-2">12+</div>
+<div class="font-label-sm text-on-surface-variant">YEARS OPERATING</div>
+</div>
+<div class="bg-surface-container border border-outline-variant p-6 col-span-2 md:col-span-1">
+<div class="font-display-hero text-4xl lg:text-5xl text-primary-container mb-2">98%</div>
+<div class="font-label-sm text-on-surface-variant">MEMBER SATISFACTION</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Member Experience -->
+<section class="py-24 bg-surface border-b border-outline-variant">
+<div class="max-w-5xl mx-auto px-margin-screen text-center">
+<span class="material-symbols-outlined text-primary-container text-5xl mb-6">format_quote</span>
+<blockquote class="font-headline-lg text-headline-lg md:text-5xl text-primary tracking-tight mb-8 leading-tight">
+            "THE FIRST WEEK CHANGED HOW I TRAIN. THE NEXT YEAR CHANGED HOW I THINK."
+          </blockquote>
+<div class="font-label-sm text-primary-fixed">JORDAN W. / MEMBER SINCE 2024</div>
+</div>
+</section>
+<!-- Membership CTA ("STOP WATCHING. START TRAINING.") -->
+<section class="relative py-32 overflow-hidden border-b border-outline-variant" id="membership">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-background/90 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="Dramatic wide angle view of an elite commercial gym floor with cinematic lighting, heavy steel equipment, heavy atmosphere, power racks ready for training." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDipmlOrTvxtY5mhR1sGywHdO_Vjum7Mpm6h0gTitC_azfY8v95WCyJEn7_prPUrzV-739sE1xk5JtK2t0fFHzGhFQP6GXKQKxyvz2PgsxI44Jit-b0hhlzOaR39e_gFhkLuFofJqu-g39fHDe0gg_jnuCC3UI9lHt_7-L-ahblQUzQbeH7-ezLsvyjrqjElBsk6DMjJQiaym_8heSg3TckW5a8PqF1KeCF4OFl7ydc3ToUA6NekGQW4w"/>
+</div>
+<div class="relative z-20 max-w-4xl mx-auto px-margin-screen text-center">
+<div class="font-label-sm text-primary-fixed mb-2">SECURE YOUR ACCESS</div>
+<h2 class="font-display-hero text-display-hero md:text-6xl text-primary mb-6">STOP WATCHING. START TRAINING.</h2>
+<p class="font-body-lg text-body-lg text-secondary max-w-xl mx-auto mb-10">
+            Join Nexus Athletica today and gain full access to all three training zones, professional equipment, and elite coaching infrastructure.
+          </p>
+<div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+<a class="w-full sm:w-auto bg-primary-container text-on-primary-fixed font-label-sm uppercase px-10 py-4 hover:bg-primary-fixed-dim transition-all" href="#membership">
+              JOIN NEXUS NOW →
+            </a>
+<a class="w-full sm:w-auto border border-outline hover:border-primary-container text-primary font-label-sm uppercase px-10 py-4 transition-all" href="#train">
+              BOOK A FACILITY TOUR
+            </a>
+</div>
+</div>
+</section>
+<!-- Facility Location -->
+<section class="py-24 bg-background border-b border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin-screen">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<div class="font-label-sm text-primary-fixed mb-2">LOCATION &amp; HOURS</div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-6">VISIT THE FACILITY.</h2>
+<div class="space-y-6 font-body-md text-on-surface-variant mb-8">
+<div>
+<div class="font-headline-md text-primary text-lg mb-1">ADDRESS</div>
+<p>742 Industrial Parkway, Sector 4, Los Angeles, CA 90021</p>
+</div>
+<div>
+<div class="font-headline-md text-primary text-lg mb-1">OPERATING HOURS</div>
+<p>Monday — Sunday: 05:00 — 23:00</p>
+<p class="text-sm text-primary-fixed mt-1">Open 365 days a year including holidays.</p>
+</div>
+</div>
+<a class="inline-flex items-center space-x-2 bg-surface-container border border-outline-variant px-6 py-3 font-label-sm text-primary hover:border-primary-container transition-all" href="https://maps.google.com" target="_blank">
+<span>GET DIRECTIONS</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="h-96 border border-outline-variant relative overflow-hidden" data-location="Los Angeles" style="">
+<div class="absolute inset-0 bg-surface-container flex items-center justify-center">
+<img class="w-full h-full object-cover opacity-80" data-alt="Stylized minimalist dark mode map visual of Los Angeles industrial district highlighting Nexus Athletica facility location with lime accent marker." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPy6BeFwOpbrCIHuNitvOjLxWrWxyUfiI3EZIJArz9z5pJzg_nZ-O9-jyv-yOolQ-m-TyEQ5WBnqb09YA8LOWNQ5fi3oAAfKEkFaxWn6fxdSgKO1xtQisxcxVmeb9jffdznOhZ3Eztj5hf19SGpeBznBg8yvnZJJz-Mzo2HQ5tjeWBVd9NubHRWDrWQ_QloJvLbNuWpnemyK0i6WhId0JT9mbUBd7Sv1rALcfawHUtjGPjKQXQULePcw"/>
+<div class="absolute z-10 bg-surface border border-primary-container px-4 py-2 font-label-sm text-primary-fixed shadow-lg flex items-center space-x-2">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span>NEXUS ATHLETICA HQ</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-surface-container border-t border-outline-variant">
+<div class="flex flex-col justify-between w-full px-margin-screen py-12 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center pb-12 border-b border-outline-variant">
+<div class="mb-6 md:mb-0">
+<span class="font-display-hero text-display-hero text-primary text-4xl lg:text-6xl block">NEXUS ATHLETICA</span>
+<p class="font-label-sm text-on-surface-variant mt-2">BUILD WHAT YOU'RE CAPABLE OF.</p>
+</div>
+<div class="flex flex-wrap gap-6 font-label-sm text-on-surface-variant">
+<a class="hover:text-primary-fixed transition-colors" href="#train">Privacy Protocol</a>
+<a class="hover:text-primary-fixed transition-colors" href="#train">Terms of Service</a>
+<a class="hover:text-primary-fixed transition-colors" href="#train">Telemetry Feed</a>
+<a class="hover:text-primary-fixed transition-colors" href="#train">Secure Comms</a>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row justify-between items-center pt-8 font-label-sm text-on-surface-variant">
+<div>© 2026 NEXUS ATHLETICA. ALL RIGHTS RESERVED.</div>
+<div class="mt-4 sm:mt-0 flex space-x-4">
+<a class="hover:text-primary-fixed transition-colors" href="#">INSTAGRAM</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">YOUTUBE</a>
+<a class="hover:text-primary-fixed transition-colors" href="#">STRAVA</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
